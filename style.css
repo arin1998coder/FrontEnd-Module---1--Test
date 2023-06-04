@@ -1,0 +1,133 @@
+html, body {
+   margin:0;
+    padding:0;
+    }
+   
+    .carousel-inner {
+    height:100%;
+    }
+   
+    .carousel-caption {
+    z-index: 10;
+    }
+    .carousel .carousel-item {
+    background-color: #777;
+    
+    }
+   
+    .carousel-item .image1 img, .carousel-item .image2 img , .carousel-item .image3 img{
+        width: 100%;
+       height: 700px;
+        object-fit: cover;
+    }
+
+
+    .carousel{
+        margin-bottom: 60px;
+    }
+
+ 
+  .wrapper {
+    display: flex; /* Set the outer div as a flex container */
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+    gap: 10px; /* Set the gap between the flex items */
+    margin-bottom: 60px;
+  }
+
+  .wrapper > div {
+    flex: 1 1 calc(33.33% - 10px); /* Make each inner div occupy 33.33% of the container width with 10px gap */
+  }
+
+  .wrapper > div img {
+    width: 100%; /* Make the images fill the width of their parent div */
+    height: 100%;
+  }
+
+  @media (max-width: 1191px) {
+
+    .wrapper{
+        gap:30px;
+    }
+    .wrapper > div {
+      flex: 1;
+
+    }
+  
+    .wrapper > div:nth-child(3) {
+      flex-basis: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+     
+    }
+    .wrapper > div:nth-child(3) img {
+        width: 500px;
+        height: 350px;
+     
+    }
+
+  }
+
+  @media (max-width: 750px) {
+
+    .wrapper {
+        display: block;
+    }
+
+    .wrapper > div:nth-child(3) img {
+        width: 100%; /* Make the images fill the width of their parent div */
+        height: 100%;
+      }
+      .wrapper > div:nth-child(3) {
+        display: block;
+       
+      }
+
+  }
+
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr; /* First and fourth columns twice the width of second and third columns */
+    grid-template-rows: 300px 300px 300px 300px; /* Three rows with auto height */
+    gap: 10px; /* Gap between grid items */
+  }
+  
+  .grid-item {
+    background-color: #f2f2f2; /* Light gray background color */
+  
+   object-fit: contain;
+
+  }
+  
+ .item1{
+    grid-row: span 2;
+ }
+
+ .item9{
+    grid-column: span 3;
+    grid-row: span 2;
+ }
+
+ .item8{
+    grid-row:span 2;
+ }
+
+ .grid-item img{
+    width: 100%;
+    height: 100%;
+ }
+
+ .section-3{
+    margin-bottom: 30px;
+ }
+
+ .card-img-top {
+    object-fit: cover;
+    height: 400px; /* Set the desired height for the images */
+    width: 100%;
+  }
+ 
+  
+ 
+  
